@@ -93,10 +93,19 @@ h2 {
 
 .hero-left > button {
     background-color: #3882F6;
-    border-style: none;
-    border-radius: 3px;
-    width: 100px;
     flex: 0;
+}
+
+button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 3px;
+    border-style: none;
+}
+
+button a {
+    color: white;
+    font-size: 14px;
 }
 
 #two {
@@ -107,11 +116,14 @@ h2 {
 
 #two h3 {
     align-self: center;
+    margin-bottom: 32px;
+
 }
 
 .card-holder {
     display: flex;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -122,12 +134,19 @@ h2 {
     flex: 1;
 }
 
+
+.card img {
+    height: 100%;
+
+}
+
 .card > div {
-    border-style: solid;
-    border-radius: 8px;
+    display: flex;
     aspect-ratio: 1;
     width: 100%;
-    border-color: #3882F6;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 #three {
@@ -161,11 +180,33 @@ blockquote {
 
 .cta-container {
     flex: 1;
+    display: flex;
     background-color: #3882F6;
-    padding: 16px 60px;
+    padding: 16px 15%;
     border-radius: 8px;
+    justify-content: space-between;
 }
 
+.left-cta,
+.right-cta {
+    display: flex;
+    align-items: center;
+}
+
+.left-cta {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right-cta {
+    justify-content: center;
+}
+
+.right-cta button {
+    background-color: transparent;
+    border: solid 1px white;
+}
 #footer {
     background-color: #1F2937;
     display: flex;
